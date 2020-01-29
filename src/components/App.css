@@ -1,0 +1,184 @@
+.Header {
+  padding: 1rem;
+  font-size: 1.5rem;
+
+  nav ul {
+    display: flex;
+
+    li {
+      padding: 0.5rem;
+
+      a {
+        color: rgb(51, 51, 51);
+        text-decoration: none;
+
+        &.active, &:hover {
+          color: rgb(255, 152, 0);
+        }
+      }
+    }
+  }
+
+  section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 60rem;
+    margin: auto;
+    h1 {
+      font-weight: 600;
+      font-size: 4rem;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      display: inline-block;
+      padding: 0.4rem;
+
+      background-color: rgb(51, 51, 51);
+      color: rgb(255, 152, 0);
+
+      font-weight: 600;
+      font-size: 1.8rem;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+}
+
+
+.Footer {
+  overflow: hidden;
+  padding: 1rem;
+  background-color: rgb(32, 35, 41);
+  color: rgb(158, 158, 158);
+  font-size: 1.5rem;
+
+  .stats {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+
+    p {
+      padding: 1rem;
+      margin: 0.4rem;
+    }
+  }
+
+  .acknowledgment {
+    text-align: center;
+    a {
+      display: inline-block;
+      border-bottom: 0.1rem solid rgb(255, 152, 0);
+      color: rgb(245, 245, 245);
+
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.2s ease 0s;
+
+      &:hover {
+        border-bottom: 0.1rem solid rgb(245, 245, 245);
+        color: rgb(255, 152, 0);
+      }
+    }
+  }
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  min-height: calc(60vh - 80px);
+  padding: 1.875rem;
+  background: rgb(32, 35, 41);
+}
+
+.CharacterCard {
+  max-width: 300px;
+  margin-bottom: 0.625rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 2px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border-radius: 0.625rem;
+  overflow: hidden;
+  margin: 10px;
+  padding: 1.25rem;
+  background: rgb(51, 51, 51);
+  p {
+    color: rgb(255, 152, 0);
+  }
+}
+
+.CharacterCard_Status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 0.75rem 0px 0.375rem;
+  border-bottom: 1px solid rgb(68, 68, 68);
+}
+
+.CharacterCard_Species {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 0.75rem 0px 0.375rem;
+  border-bottom: 1px solid rgb(68, 68, 68);
+}
+
+.CharacterCard_Gender {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 0.75rem 0px 0.375rem;
+  border-bottom: 1px solid rgb(68, 68, 68);
+}
+
+.CharacterCard_Origin {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 0.75rem 0px 0.375rem;
+  border-bottom: 1px solid rgb(68, 68, 68);
+}
+
+.CharacterCard_LastLocation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 0.75rem 0px 0.375rem;
+  border-bottom: 1px solid rgb(68, 68, 68);
+}
+
+.characterCard_Name {
+  color: rgb(245, 245, 245);
+  font-size: 1.625rem;
+  font-weight: 400;
+  font-stretch: expanded;
+  margin: 0px;
+}
+
+.cardHeader {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+.characterCard_Title {
+  width: 100%;
+  opacity: 0.8;
+  position: absolute;
+  bottom: 0px;
+  background: rgb(32, 35, 41);
+  padding: 0.625rem;
+}
+
+span {
+  font-size: 0.7rem;
+    font-weight: 400;
+    color: rgb(158, 158, 158);
+}
